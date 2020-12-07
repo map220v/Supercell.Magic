@@ -33,6 +33,8 @@
 
         public virtual void Encode(ByteStream stream)
         {
+            SetId(1); //delete after m_id fixed
+
             stream.WriteLong(this.m_id);
 
             if (this.m_senderAvatarId != null)
